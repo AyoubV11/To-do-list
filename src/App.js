@@ -1,22 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
-
-
-
-const important = [];
-
-
-//function Task(props) {
-//  return (
-//    <div style={{ margin: '10px', padding: '10px', border: '1px solid #ccc' }}>
-//      <p>Titre : {props.title}</p>
-//      <p>Status : {props.completed ? 'Terminée' : 'En cours'}</p>
-//      <p>Categorie : {props.category}</p>
-//      <button onClick={props.onComplete}>Terminer</button>
-//    </div>
-//  );
-//}
-
+import React, { useState, } from 'react';
 
 function AddList() {
   // État pour la liste des tâches
@@ -67,9 +50,7 @@ function AddList() {
 
       {/* Boutons de filtre */}
       <div style={{ marginBottom: '20px' }}>
-        <button onClick={() => setFilter('Tous')} style={{ marginRight: '10px' }}>
-          Tous
-        </button>
+        <button onClick={() => setFilter('Tous')} style={{ marginRight: '10px' }}>Tous</button>
         <button onClick={() => setFilter('Important')}>Important</button>
       </div>
 
